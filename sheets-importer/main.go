@@ -53,7 +53,7 @@ func getClient(ctx context.Context, config *oauth2.Config, tokenFile string) (*h
 func main() {
 	var host, database, user, password, docId, sheetName, clientSecretFile, tokenFile string
 	flag.StringVar(&host, "host", "http://myinfluxdb:8086", "InfluxDB Host")
-	flag.StringVar(&database, "database", "dashai-sheets", "InfluxDB Database")
+	flag.StringVar(&database, "database", "DashAiSheets", "InfluxDB Database")
 	flag.StringVar(&user, "user", "", "InfluxDB User")
 	flag.StringVar(&password, "password", "", "InfluxDB Password")
 	flag.StringVar(&docId, "doc-id", "1NnmdNxhBKQe9veBoWjptDCG2ZOOrOXkNV6yqMYP4meI", "Google Sheet Documen ID")
